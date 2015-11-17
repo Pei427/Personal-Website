@@ -29,7 +29,7 @@
 
       	$(window).load(function() {
       		$(".preloader").fadeOut("slow", function(){
-      			$("#resume, #blog, #portfolio, #contact").removeClass("absolute");
+      			$("#resume, #education, #portfolio, #contact").removeClass("absolute");
       			$(".preloader-left").addClass("slide-left");
       			$(".preloader-right").addClass("slide-right");
       			//	Typerjs function - Edit the sentences below
@@ -52,7 +52,7 @@
 
 		$("#resume .expand").on("click", function() {
 			$("#resume").toggleClass("full").toggleClass("full-height");
-			$("#blog, #portfolio, #contact").toggleClass("zero").toggleClass("zero-height");
+			$("#education, #portfolio, #contact").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 		});
@@ -62,21 +62,21 @@
 			$(this).hide();
 		});
 
-		$("#blog .expand").on("click", function() {
-			$("#blog").toggleClass("full").toggleClass("full-height");
+		$("#education .expand").on("click", function() {
+			$("#education").toggleClass("full").toggleClass("full-height");
 			$("#resume, #portfolio, #contact").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 		});
 
-		$("#blog .close-icon").on("click", function() {
-			$("#blog .expand").show();
+		$("#education .close-icon").on("click", function() {
+			$("#education .expand").show();
 			$(this).hide();
 		});
 
 		$("#portfolio .expand").on("click", function() {
 			$("#portfolio").toggleClass("full").toggleClass("full-height");
-			$("#resume, #blog, #contact").toggleClass("zero").toggleClass("zero-height");
+			$("#resume, #education, #contact").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 		});
@@ -88,7 +88,7 @@
 
 		$("#contact .expand").on("click", function() {
 			$("#contact").toggleClass("full").toggleClass("full-height");
-			$("#resume, #blog, #portfolio").toggleClass("zero").toggleClass("zero-height");
+			$("#resume, #education, #portfolio").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 		});
@@ -142,7 +142,7 @@
 		//	CSS Correct
 
 		var dateHeight = $(".date").outerHeight();
-		$(".blog-title").css("min-height", dateHeight);
+		$(".education-title").css("min-height", dateHeight);
 
 		// Ajax contact function
 

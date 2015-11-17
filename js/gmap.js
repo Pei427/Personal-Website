@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-	//set your google maps parameters 51.5255069 -0.0836207
+	//set google maps parameters 
 	var latitude = 37.3463206,
 		longitude = -121.8909347,
 		map_zoom = 14;
